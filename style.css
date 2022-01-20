@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Sen&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-clr: #32f5c8;
+  --background-clr: #013243;
+}
+
+.main-container {
+  background-color: var(--background-clr);
+  height: 100vh;
+  position: relative;
+}
+
+.main-container img {
+  position: absolute;
+}
+
+.main-container #img-3 {
+  top: 7em;
+  left: 3em;
+}
+
+.main-container #img-4 {
+  bottom: 3.5em;
+  right: 7em;
+}
+
+.main-container #img-1 {
+  top: 37%;
+  right: 4em;
+}
+
+.main-container #img-2 {
+  top: 2.8em;
+  right: 7.5em;
+}
+
+.main-container #img-5 {
+  top: 40%;
+  right: 28em;
+}
+
+/* main-section styling */
+
+.main-section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+
+.headings {
+  margin-bottom: 0.5em;
+}
+
+.heading {
+  color: var(--font-clr);
+  font-size: 8em;
+  font-family: "Sen", sans-serif;
+}
+
+.para {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4em;
+  color: #eee;
+  width: 34%;
+  margin-bottom: 2.2em;
+  color: #a9bdc6;
+}
+
+.cta-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: var(--background-clr);
+  background-color: var(--font-clr);
+  padding: 1em 1em;
+  font-weight: 900;
+  border-radius: 6px;
+}
+
+/* follow twitter */
+
+.follow-twitter {
+  display: flex;
+  align-items: center;
+  width: 22%;
+  justify-content: space-between;
+}
+
+.social-link img {
+  position: static;
+}
+
+.follow-twitter h2 {
+  font-family: "Inter", sans-serif;
+  color: #a9bdc6;
+  font-weight: 400;
+  font-size: 1.4em;
+  color: #eee;
+}
+
+@media (max-width: 900px) {
+  .heading {
+    font-size: 6em;
+    font-weight: 900;
+  }
+
+  .para {
+    width: 67%;
+  }
+
+  .main-container #img-5 {
+    top: 25%;
+    right: 13em;
+  }
+
+  .main-section {
+    width: 90%;
+  }
+
+  .follow-twitter {
+    width: 37%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-container #img-4,
+  .main-container #img-5 {
+    display: none;
+  }
+
+  .headings {
+    margin-bottom: 1.5em;
+  }
+
+  .heading {
+    font-size: 3em;
+  }
+  .para {
+    width: 100%;
+    font-size: 1.3em;
+    margin-bottom: 2.7em;
+  }
+
+  .follow-twitter {
+    width: 75%;
+  }
+
+  .follow-twitter h2 {
+    font-size: 1.3em;
+  }
+
+  .main-section {
+    padding: 1.8em 0;
+  }
+
+  .main-container #img-2 {
+    top: 6.8em;
+    right: 1em;
+  }
+
+  .main-container #img-3 {
+    top: 8.6em;
+    left: 2em;
+    width: 7em;
+  }
+
+  .main-container #img-1 {
+    top: 65%;
+    right: 0.2em;
+    width: 11em;
+  }
+}
+
+@media (max-width: 376px) {
+  .main-container #img-3 {
+    top: 5.6em;
+  }
+
+  .main-container #img-2 {
+    top: 5.8em;
+    width: 10em;
+  }
+
+  .main-container #img-1 {
+    width: 10.1em;
+  }
+}
